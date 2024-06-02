@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class deneme {
     static int N, M, P;
@@ -7,10 +8,14 @@ public class deneme {
 
     public static void main(String[] args) {
 
-        Random random = new Random();
-        N = random.nextInt(10) + 1;
-        M = random.nextInt(10) + 1;
-        P = random.nextInt(10) + 1;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Lütfen A matrisinin satır sayısını (N) girin: ");
+        N = scanner.nextInt();
+        System.out.print("Lütfen A matrisinin sütun sayısını ve B matrisinin satır sayısını (M) girin: ");
+        M = scanner.nextInt();
+        System.out.print("Lütfen B matrisinin sütun sayısını (P) girin: ");
+        P = scanner.nextInt();
+
 
         matrisOlustur();
 
